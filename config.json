@@ -1,0 +1,4 @@
+{
+	"baseUrl": "/[[app_name]]",
+	"source": "[[app_name]]/src/index"
+}
