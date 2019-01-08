@@ -25,7 +25,7 @@ class App extends Component {
 
     return (
       <div styleName='main.app'>
-        <AppHeader appName='[[app_name]]' mode='app' />
+        <AppHeader appName='[[app_name]]' mode='site' />
         <AppMain>
           <div styleName='main.app-main'>
             <Scrollbars autoHide>
