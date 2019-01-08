@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import { connect } from 'react-redux'
+import { Scrollbars } from 'react-custom-scrollbars'
+import { Segment, Container } from 'semantic-ui-react'
 
-import { AppHeader, AppFooter, AppMain } from 'formula_one'
+import { AppHeader, AppFooter, AppMain, getTheme } from 'formula_one'
 
 import main from 'formula_one/src/css/app.css'
 import blocks from '../css/app.css'
@@ -12,38 +13,47 @@ class App extends Component {
     const creators = [
       {
         name: 'Dhruv Bhanushali',
-        role: 'Mentor'
+        role: 'Mentor',
+        link: 'https://dhruvkb.github.io/'
       },
       {
         name: 'Praduman Goyal',
-        role: 'Frontend Developer'
+        role: 'Frontend Developer',
+        link: 'https://pradumangoyal.github.io'
       }
     ]
-    const { match } = this.props
 
     return (
       <div styleName='main.app'>
-        <AppHeader
-          appName='[[app-display-name]]'
-          appLink={`http://${window.location.host}${match.path}`}
-        />
+        <AppHeader appName='[[app_name]]' mode='app' />
         <AppMain>
           <div styleName='main.app-main'>
-            <div styleName='blocks.content-div'>
-              <h1>Congratulations!</h1>
-              <p>
-                You have successfully initiated <em>[[app_name]]</em> and taken
-                the first step to building your <strong>Omniport</strong> app.
-              </p>
-              <p>
-                Edit <code>./src/components/app.js</code> and make this app do
-                magical things. We can't wait to see what you make.
-              </p>
-              <p>
-                Greetings,<br />
-                Team Omniport
-              </p>
-            </div>
+            <Scrollbars autoHide>
+              <Container styleName='blocks.content-div'>
+                <center>
+                  <Segment compact color={getTheme()}>
+                    <h1>Congratulations!</h1>
+                    <p styleName='blocks.logo'>
+                      <img src='/branding/site/logo.svg' />
+                    </p>
+                    <p>
+                      You have successfully initiated <em>[[app_name]]</em> and
+                      taken the first step to building your
+                      <strong> Omniport</strong> app.
+                    </p>
+                    <p>
+                      Edit <code>./src/components/app.js</code> and make this
+                      app do magical things. We can't wait to see what you make.
+                    </p>
+                    <p>
+                      Greetings,
+                      <br />
+                      Team Omniport
+                    </p>
+                  </Segment>
+                </center>
+              </Container>
+            </Scrollbars>
           </div>
         </AppMain>
         <AppFooter creators={creators} />
@@ -52,4 +62,7 @@ class App extends Component {
   }
 }
 
-export default connect(null, null)(App)
+export default connect(
+  null,
+  null
+)(App)
