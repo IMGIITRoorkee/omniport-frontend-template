@@ -1,1 +1,3 @@
-# omniport-frontend-[[app-name]]
+# [[app-display-name]]
+
+> Omniport app frontend
