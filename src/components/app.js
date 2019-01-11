@@ -18,7 +18,7 @@ class App extends Component {
       },
       {
         name: 'Praduman Goyal',
-        role: 'Frontend Developer',
+        role: 'Frontend developer',
         link: 'https://pradumangoyal.github.io'
       }
     ]
