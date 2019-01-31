@@ -32,24 +32,26 @@ class App extends Component {
               <Container styleName='blocks.content-div'>
                 <center>
                   <Segment compact color={getTheme()}>
-                    <h1>Congratulations!</h1>
-                    <p styleName='blocks.logo'>
-                      <img src='/branding/site/logo.svg' />
-                    </p>
-                    <p>
-                      You have successfully initiated <em>[[app_name]]</em> and
-                      taken the first step to building your
-                      <strong> Omniport</strong> app.
-                    </p>
-                    <p>
-                      Edit <code>./src/components/app.js</code> and make this
-                      app do magical things. We can't wait to see what you make.
-                    </p>
-                    <p>
-                      Greetings,
-                      <br />
-                      Team Omniport
-                    </p>
+                    <center>
+                      <h1>Congratulations!</h1>
+                      <p styleName='blocks.logo'>
+                        <img src='/branding/site/logo.svg' />
+                      </p>
+                      <p>
+                        You have successfully initiated <em>[[app_name]]</em> and
+                        taken the first step to building your
+                        <strong> Omniport</strong> app.
+                      </p>
+                      <p>
+                        Edit <code>./src/components/app.js</code> and make this
+                        app do magical things. We can't wait to see what you make.
+                      </p>
+                      <p>
+                        Greetings,
+                        <br />
+                        Team Omniport
+                      </p>
+                    </center>
                   </Segment>
                 </center>
               </Container>
