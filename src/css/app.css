@@ -1,22 +1,22 @@
 .content-div {
-    height: 100%;
+  height: 100%;
 
-    display: flex !important;
-    flex-direction: column;
-    justify-content: center;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
 
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .logo img {
-    width: 12em;
+  width: 12em;
 
-    animation: spin 4s linear;
-    animation-iteration-count: infinite;
+  animation: spin 4s linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes spin {
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
