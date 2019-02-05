@@ -10,13 +10,4 @@
 
 .logo img {
   width: 12em;
-
-  animation: spin 4s linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
 }
